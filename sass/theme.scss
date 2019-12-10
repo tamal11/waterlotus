@@ -1,0 +1,29 @@
+// All variables first from theme
+@import "theme/variables";
+// Loads WooCommerce style fixes.
+@import "understrap/woocommerce";
+
+// Underscores media styles
+@import "underscores/captions";
+@import "underscores/galleries";
+@import "underscores/media";
+
+// The design all scss and partials
+@import "theme/body";
+@import "theme/elements";
+@import "theme/header";
+// Menus
+@import "theme/navigation";
+// Page
+@import "theme/home";
+@import "theme/page";
+@import "theme/sidebar";
+@import "theme/blog";
+// Footer
+@import "theme/footer";
+
+// WooCommerce
+@import "theme/woocommerce";
+
+// Contact Form 7 - Bootstrap 4 support
+@import "theme/contact-form7";

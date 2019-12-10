@@ -1,0 +1,71 @@
+.widget-area {
+  background-color: $section-bg;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .widget:last-child {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 576px) {
+  .widget-area {
+    background-color: transparent;
+  }
+}
+
+.widget {
+  margin-bottom: 1rem;
+  border-bottom: thin solid $section-bg;
+  padding-bottom: 1rem;
+  .widget-title {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      a {
+        line-height: 1.6;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .widget {
+    .widget-title {
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .widget {
+    .widget-title {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// Widget elements like search box
+.widget-area aside {
+
+  .search-box {
+    width: 100%;
+    border: thin solid $primary;
+
+    .search-text {
+      width: calc(100% - 2.25rem);
+      color: $font-color;
+    }
+
+    .search-submit {
+      background-position-y: 0;
+    }
+  }
+
+}

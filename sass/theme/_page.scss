@@ -1,0 +1,87 @@
+.wrapper, 
+.main-content {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .wrapper, 
+  .main-content {
+  padding-bottom: 1rem;
+}
+}
+
+// page title
+.page .entry-header .entry-title {
+  color: $primary;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.08rem;
+}
+
+// page banner for various banners
+.page-banner {
+  height: 12rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  position: relative;
+}
+
+
+@media (min-width: 768px) {
+  .page-banner {
+    height: 16rem;
+  }
+}
+
+@media ( min-width: 992px ) {
+  .page-banner {
+    height: 20rem;
+  }
+}
+
+// FAQs
+.faq-page {
+  background-image: url("../images/banner/faq-image.jpg");
+  background-position-x: 100%;
+}
+
+// About us
+.about-us {
+  background-image: url("../images/slider/image-two.jpg");
+  margin-bottom: 8rem;
+}
+
+// Contact us
+div.wpcf7 {
+  margin: 0 !important;
+}
+
+.about-us-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  a {
+    height: 10rem;
+    width: 10rem;
+    border: 0.125rem solid #fff;
+    background-color: $accent-color;
+    padding: 0.5rem;
+    z-index: 9;
+    margin-bottom: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus, &:hover {
+      opacity: 1;
+    }
+
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
+}

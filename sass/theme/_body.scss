@@ -1,0 +1,144 @@
+body {
+  background-color: $body-bg;
+  color: $font-color;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: $primary;
+  &:focus, &:hover {
+    color: $primary-bold;
+    opacity: 0.87;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+// Typography
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: $font-color;
+  font-weight: 400;
+  position: relative;
+}
+// headings regular fw: 400
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  &.bold {
+    font-weight: 700;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+}
+
+// heading sizes for mobile
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 992px) {
+  // heading sizes for desktops
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+
+}
+
+// adjustment classes
+.center {
+  text-align: center;
+}
+.section-space {
+  padding: 2.5rem 0;
+}
+@media (min-width: 992px) {
+  .section-space {
+    padding: 4rem 0;
+  }
+}
+.link-overlay {
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.section-bg {
+  background-color: $section-bg;
+}
+
+// resets
+.btn-outline-primary:not(:disabled):not(.disabled).active, 
+.btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+	background-color: $primary;
+	border-color: $primary;
+}
+.btn-outline-primary {
+  color: $primary-light;
+  border-color: $primary-light;
+}
+.btn-outline-primary.focus, 
+.btn-outline-primary:focus {
+	box-shadow: 0 0 0 .2rem $primary-rgba;
+}
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: $primary;
+	border-color: $primary;
+}
